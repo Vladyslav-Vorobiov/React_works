@@ -1,3 +1,4 @@
 # React_works
 
-- 23 - Carousel component on React
+- Different works on different branches
+* branch Carousel - Carousel component on React

@@ -28,7 +28,7 @@ class Collapse extends React.Component {
                        href="#"
                        role="button"
                        aria-expanded={this.state.isOpened}
-                       onClick={this.handleClick}> Link with href
+                       onClick={this.handleClick}> Click me!
                     </a>
                 </p>
                 <div className={isCollapsed}>

@@ -39,7 +39,7 @@ class Carousel extends React.Component {
     }
 
     renderSpan(type, text) {
-        return  (
+        return (
             <React.Fragment>
                 <span className={`carousel-control-${type}-icon`} aria-hidden="true"></span>
                 <span className="visually-hidden">{text}</span>
@@ -69,6 +69,23 @@ class Carousel extends React.Component {
 
         )
     }
+}
+
+Carousel.defaultProps = {
+    images: [
+        {
+            theme: 'island',
+            src: 'http://cdn.shopify.com/s/files/1/0376/3161/articles/unnamed_0f4d66f6-2064-4cf7-8544-dbbc04932c91.jpg?v=1585957644'
+        },
+        {
+            theme: 'yacht',
+            src: 'https://marine-trade.com.ua/wp-content/uploads/2020/12/fiart-43-1-3-500x300.jpg'
+        },
+        {
+            theme: 'castle',
+            src: 'https://everest-tour.by/wp-content/uploads/2019/12/mir-nesvizh-2dn-500x300.jpg'
+        }
+    ]
 }
 
 export default Carousel

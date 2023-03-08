@@ -6,3 +6,5 @@
 - branch MyForm - Form and FormDataTable components on React
 - branch MathComponent - Related SimpleCalc component and LogList component with deletability of logs by click on React
 - branch TodoBox - Related TodoBox component and Item component with deletability by click on React
+- branch Card - functional component Card with namespaces
+

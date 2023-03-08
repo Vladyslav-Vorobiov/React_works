@@ -7,5 +7,5 @@
 - branch MathComponent - Related SimpleCalc component and LogList component with deletability of logs by click on React
 - branch TodoBox - Related TodoBox component and Item component with deletability by click on React
 - branch Card - class component Card with namespace functional components
-- branch Modal - functional component Modal with namespace functional components
+- branch Modal - class component Modal with namespace functional components
 

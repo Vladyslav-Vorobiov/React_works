@@ -23,7 +23,7 @@ class TodoBox extends React.Component {
     };
 
     handleRemove = (id) => {
-        const currentTodoItems = _.cloneDeep(this.state.todoItems);
+        const currentTodoItems = structuredClone(this.state.todoItems);
         const finalTodoItems = currentTodoItems.filter((el) => el.id !== id);
         this.setState({todoItems: finalTodoItems});
     };

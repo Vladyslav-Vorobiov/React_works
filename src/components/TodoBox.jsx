@@ -34,7 +34,7 @@ class TodoBox extends React.Component {
                 <h3 className="mb-5">React TodoBox</h3>
                 <form className="d-flex" onSubmit={this.handleSubmit}>
                     <div className="me-3">
-                        <input type="text" value={this.state.value} onChange={this.handleChange} required=""
+                        <input type="text" value={this.state.value} onChange={this.handleChange} required
                                className="form-control" placeholder="I am going..."/>
                     </div>
                     <button type="submit" className="btn btn-primary">add</button>

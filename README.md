@@ -9,4 +9,5 @@
 - branch Card - class component Card with namespace functional components
 - branch Modal - class component Modal with namespace functional components
 - branch PostCatalog - functional component PostCatalog (useState, useEffect, API)
+- branch MarkdownEditor - functional component MarkdownEditor (useEffect, useRef) 
 

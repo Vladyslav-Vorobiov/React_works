@@ -9,5 +9,6 @@
 - branch Card - class component Card with namespace functional components
 - branch Modal - class component Modal with namespace functional components
 - branch PostCatalog - functional component PostCatalog (useState, useEffect, API)
-- branch MarkdownEditor - functional component MarkdownEditor (useEffect, useRef) 
+- branch MarkdownEditor - functional component MarkdownEditor (useEffect, useRef)
+- branch React_TodoList - full app Todo List with the ability to add, remove, edit and change completed status. Stack: React, React-Router, HOC, Formic, Yup, React-Bootstrap and localStorage for API imitation.
 

@@ -1,4 +1,4 @@
-import './style.css';
+import './TodoItem.scss';
 import {useNavigate} from 'react-router-dom';
 import Checkbox from 'react-bootstrap/FormCheck';
 import Button from "react-bootstrap/Button";

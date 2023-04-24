@@ -1,5 +1,3 @@
-import "./style.css";
-
 const Loader = () => {
     return (
         <div className='wrapper'>

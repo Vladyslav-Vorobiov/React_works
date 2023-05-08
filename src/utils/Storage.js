@@ -92,8 +92,12 @@ class Storage {
 
         currentData.splice(currentItem, 1);
 
-        await this.saveDataToStorage(currentData);
+        if (!currentData.length) {
+            await localStorage.removeItem(this.#dbName);
+            return [];
+        }
 
+        await this.saveDataToStorage(currentData);
         return currentData;
     }
 

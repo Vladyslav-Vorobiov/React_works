@@ -35,9 +35,9 @@ const EditTodoForm = ({item, handleSave, handleCancel}) => {
     return (
 
         <FormikProvider value={formik}>
-            <Form onSubmit={formik.handleSubmit}>
+            <Form className='edit-form' onSubmit={formik.handleSubmit}>
                 <Form.Group className="mb-3" controlId="todoFormTitle">
-                    <Form.Label className="fw-bold">Task title </Form.Label>
+                    <Form.Label className="fw-bold">Task title</Form.Label>
                     <Form.Control
                         name="title"
                         type="text"
@@ -47,32 +47,31 @@ const EditTodoForm = ({item, handleSave, handleCancel}) => {
                         value={formik.values.title}
                     />
                     {formik.touched.title && formik.errors.title ? (
-                        <div style={{color: "tomato"}}>{formik.errors.title}</div>
+                        <div className="edit-form__errors-title">{formik.errors.title}</div>
                     ) : null}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="todoFormDescription">
                     <Form.Label className="fw-bold">Task description</Form.Label>
                     <Form.Control
+                        className="edit-form__textarea"
                         name="description"
                         as="textarea"
                         placeholder="Enter task description"
-                        style={{
-                            height: '200px'
-                        }}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.description}
                     />
                     {formik.touched.description && formik.errors.description ? (
-                        <div style={{color: "tomato"}}>{formik.errors.description}</div>
+                        <div className="edit-form__errors-title">{formik.errors.description}</div>
                     ) : null}
                 </Form.Group>
                 <div className="d-flex justify-content-center align-items-center">
-                    <Field type="checkbox"
+                    <Field className="edit-form__checkbox"
+                           type="checkbox"
                            name="completed"
                            checked={formik.values.completed}
-                           style={{width: 16, height: 16, marginRight: 4}}
-                    /> <span>Done ?</span>
+                    />
+                    <span>Done ?</span>
                 </div>
                 <div className='d-flex justify-content-between mt-3'>
                     <Button type="submit" variant="success">Save changes</Button>

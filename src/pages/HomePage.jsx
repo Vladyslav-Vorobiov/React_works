@@ -80,7 +80,7 @@ const HomePage = () => {
                 )}
             </Row>
             :
-            <h5 className='text-center mt-5'>Please create your first task...</h5>
+            <p className='text-center fs-5 fw-bold mt-5'>Please create your first task...</p>
     );
 
     const ItemsContainerWithLoader = withLoader(getTodos, isLoading);
@@ -88,9 +88,7 @@ const HomePage = () => {
     return (
 
         <>
-
             <h2 className='text-center mt-5 mb-5 text-uppercase fw-bold'>Todo List</h2>
-
             <Container>
                 <Row>
                     <Col xs={4}>
@@ -101,9 +99,7 @@ const HomePage = () => {
                     </Col>
                 </Row>
             </Container>
-
         </>
-
     );
 };
 

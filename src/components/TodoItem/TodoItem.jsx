@@ -1,4 +1,3 @@
-import './TodoItem.scss';
 import {useNavigate} from 'react-router-dom';
 import Checkbox from 'react-bootstrap/FormCheck';
 import Button from "react-bootstrap/Button";
@@ -19,7 +18,11 @@ const TodoItem = ({title, description, id, checked, changeStatus, removeTodoItem
             <div className="taskHeading fw-bold">{title}</div>
             <div className="taskDescription">{description}</div>
             <hr/>
-            <Checkbox className="d-inline-block me-2" checked={checked} onChange={changeStatus(id)}/>
+            <Checkbox
+                className="d-inline-block me-2"
+                checked={checked}
+                onChange={changeStatus(id)}
+            />
             <span>Done ?</span>
             <hr/>
             <div className='d-flex justify-content-between'>
